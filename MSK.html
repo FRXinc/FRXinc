@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="icon" type="image/x-icon" href="MrsKirby.png">
-        <link rel="stylesheet" href="MrStyles.css">
-        <script type="text/javascript">
-            window.onload = function () {
+        <link rel="stylesheet" href="MrStyles.css"> <!--dit is de stylesheet-->
+        <link rel="icon" type="image/x-icon" href="MrsKirby.png"> <!--dit is de icon-->
+        <script type="text/javascript"> // disclaimer: google heeft geholpen met deze maar ik zal proberen het uit te leggen
+            window.onload = function () { // doe dit als de website laad
         
-              var dps = [{x: 1, y: 164470}, {x: 2, y: 135683}, {x: 3, y: 183278}, {x: 4, y: 223620}, {x: 5, y: 884317},{x: 6, y: 754610}, {x: 7, y: 646513}, {x: 8, y: 634618}, {x: 9, y: 279220}, {x: 10, y: 483617}];   //dataPoints. 
-              var chart = new CanvasJS.Chart("chartContainer",{
-                backgroundColor: "#bf430d",
+              var dps = [{x: 1, y: 164470}, {x: 2, y: 135683}, {x: 3, y: 183278}, {x: 4, y: 223620}, {x: 5, y: 884317},{x: 6, y: 754610}, {x: 7, y: 646513}, {x: 8, y: 634618}, {x: 9, y: 279220}, {x: 10, y: 483617}];   //dataPoints aan het begin van het laden. staat dus vast 
+              var chart = new CanvasJS.Chart("chartContainer",{ //maakt de chart aan
+                backgroundColor: "#bf430d", //de style opties, die kondne niet in css anders ging het kapot
                   title :{
                       text: "Mrs Kirby NFT Value",
                       fontFamily: 'Poppins',
@@ -50,37 +50,37 @@
                 var Moneyvalue = yVal;
                 document.getElementById("demo").innerHTML = Moneyvalue;
             }
-              chart.render();
-              var xVal = dps.length + 1;
-              var updateInterval = 1000;
+              chart.render(); //rendert de chart
+              var xVal = dps.length + 1; //maakt de chart 1 langer
+              var updateInterval = 3000; //doe dit elke 3 seconden (3000ms)
         
-              var updateChart = function () {
+              var updateChart = function () { //update de chart met de volgende instructies
                   
                   
-                  yVal = Math.floor((Math.random() * 1000000) + 1);
-                  dps.push({x: xVal,y: yVal});
+                  yVal = Math.floor((Math.random() * 1000000) + 1); //kies een nummer tussen de 1 en 1 miljoen
+                  dps.push({x: xVal,y: yVal}); //maak de grafiek langer. misschien ook hoger als er het de hoogste waarde is van de laatste 10
                   
                   xVal++;
-                  if (dps.length >  10 )
+                  if (dps.length >  10 ) //als de chart l0 elementen heeft en er eentje bijkomt, doe het volgende
                   {
-                      dps.shift();				
+                      dps.shift();	//verplaats de grafiek naar rechts zodat de nieuwe waarde er op komt			
                   }
         
-                  chart.render();		
+                  chart.render();	//render de chart	
 
         
         };
-        setInterval(function(){updateChart()}, updateInterval); 
+        setInterval(function(){updateChart()}, updateInterval); //update de chart
         }
         </script>
-        <script type="text/javascript" src="https://cdn.canvasjs.com/canvasjs.min.js" font="Poppins"></script>
+        <script type="text/javascript" src="https://cdn.canvasjs.com/canvasjs.min.js" font="Poppins"></script> <!--dit is de grafiek source bestand-->
     </head>
     <body>
         <div class="menu">
-            <a alt="Home" href="index.html" class="menuitem">Home</a>
-            <a alt="Store" href="Store.html" class="menuitem">Store</a>
-            <a alt="Balance" href="Balance.html" class="menuitem">Balance</a>
-            <div class="profile"><a alt="Profile" href="Profile.html" class="menuitem" >Profile</a><img src="pfp.png"></div>
+            <a alt="Home" href="index.html" class="menuitem">Home</a> <!--knop naar index (home pagina)-->
+            <a alt="Store" href="Store.html" class="menuitem">Store</a> <!--knop naar de store (overzicht alle nft)-->
+            <a alt="Balance" href="Balance.html" class="menuitem">Balance</a> <!--knop naar Balance (geld)-->
+            <div class="profile"><a alt="Profile" href="Profile.html" class="menuitem" >Profile</a><img src="pfp.png"></div> <!--knop naar profiel-->
         </div>
         <div class="chartcontainingbox">
             <div id="chartContainer">
@@ -89,26 +89,26 @@
         <div class="belowchartoptions">
             <div class="catinfobox">
                 Mrs. Kirby (黑鼻头, "Black Nose Tip") is a common visitor to the Happy Canteen feeding station, known for her cute face and distinct markings that look like Kirby. She is also known for being the most dominant cat, picking fights with everyone including Mr. Fresh himself, resulting in her having a "Queen" status.
-            </div>
+            </div>  <!--info over kat-->
             <div class="picturevaluebox">
-                <img src="MrsKirby.png">
+                <img src="MrsKirby.png"> <!--icoontje van de pagina-->
             </div>
             <div class="buysellbuttonbox">
                 <div class="BuySellButtonInNFTPage">
-                    <div class="StoreButtonHome"><a class="BuyBox">Buy</a></div>
-                    <div class="SignUpButtonHome"><a class="SellBox">Sell</a></div>
+                    <div class="StoreButtonHome"><a class="BuyBox">Buy</a></div> <!--knop (die niet werkt) om te kopen-->
+                    <div class="SignUpButtonHome"><a class="SellBox">Sell</a></div> <!--knop (die niet werkt) om te verkopen-->
                 </div>
             </div>
         </div>
-        <div id="Footbalk"></div>
+        <div id="Footbalk"></div> <!--rode balk van footer-->
         <div class="Footer">
-            <div class="Foottelefoonnummerenadres">Wellerzand <br>11, 8321 PH <br>Urk</div>
+            <div class="Foottelefoonnummerenadres">Wellerzand <br>11, 8321 PH <br>Urk</div> <!--adres-->
             <div class="Middlefooter">
-                <div class="FootTosEnEmail">Terms of Service</div>
-                <div class="TitleFooter">MrFreshCoin</div>
-                <div class="FootTosEnEmail">FRX@gmail.com</div>
+                <div class="FootTosEnEmail">Terms of Service</div> <!--TOS-->
+                <div class="TitleFooter">MrFreshCoin</div> <!--logo-->
+                <div class="FootTosEnEmail">FRX@gmail.com</div> <!--email-->
             </div>
-            <div class="Foottelefoonnummerenadres">06 <br>123456789</div>
+            <div class="Foottelefoonnummerenadres">06 <br>123456789</div> <!--telefoonnummer-->
         </div>
     </body>
 </html>

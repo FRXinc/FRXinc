@@ -1,8 +1,9 @@
-body {
+/*border-radius:25px; zorgt ervoor dat het object ronde hoeken heeft*/
+body { /*achtergrond kleur op alle paginas*/
     background-color: #313338;
     background-size: cover;
 }
-.Title h1 {
+.Title h1 {/*titel op index pagina (mrfreshcoin)*/
     background-color:#bf430d ;
     border-radius: 25px;
     color: white;
@@ -13,23 +14,23 @@ body {
     margin-bottom: 0%;
     width: 20%;
 }
-.Frx {
+.Frx {/*titel bedrij op index*/
     color:white;
     text-align: center;
     font-size: 600%;
     margin-top: 0px;
     margin-bottom: 0px;
 }
-.Paragraph {
+.Paragraph {/*motto van frx op index*/
     color:white;
     text-align: center;
     font-size: 200%;
 }
-.SignupStoreButtonInHomePage {
+.SignupStoreButtonInHomePage { /*de class naam spreekt voor zichzelf*/
     justify-content:center;
     display: flex;
 }
-.WBBT {
+.WBBT { /*White backround Black text*/
     color: black;
     background-color: white;
     border-radius: 25px;
@@ -44,7 +45,7 @@ body {
     justify-content: space-evenly;
     text-decoration: none;
 }
-.BBWT {
+.BBWT {/*Black backround white tekst met witte border*/
     color: white;
     border: 2px solid white;
     font-size: 150%;
@@ -58,10 +59,10 @@ body {
     justify-content: space-evenly;
     text-decoration: none;
 }
-.SignupStoreButtonInHomePage div {
+.SignupStoreButtonInHomePage div {/*RUIMTE VOOR DE BACKROUND*/
     padding: 25px;
 }
-.FeaturedHome {
+.FeaturedHome { /*tekst in het midden en wat groter (tekst in index voor verwijzing naar nfts)*/
     justify-content: center;
     display: flex;
     color:white;
@@ -69,7 +70,7 @@ body {
     margin-top: 0%;
     margin-bottom: 0%;
 }
-.allthecoins {
+.allthecoins { /*box waar al de NFTs inzitten*/
     justify-content: space-evenly;
     display: flex;
     margin-top: 0%;
@@ -78,23 +79,23 @@ body {
     padding-top: 2.5%;
     padding-bottom: 2.5%;
 }
-.allthecoins div {
+.allthecoins div { /*extra opties voor divs in deze class*/
     padding-top: 5px;
 }
-.allthecoins div img {
+.allthecoins div img { /*opties voor de plaatjes in deze div*/
     border-radius: 25px;
     height: 275px;
     width: 275px;
     border: 3px solid #bf430d;
 }
-@font-face {
+@font-face { /*dit zorgt ervoor dat onze eigen font werkt op de website*/
     font-family: 'Poppins';
     src: url(Poppins-Bold.ttf);
 }
-body {
+body { /*zegt dat in de hele body deze font gebruikt moet worden*/
     font-family: 'Poppins';
 }
-.menu {
+.menu { /*de header van de website met knopjes om naar hoofdpaginas te gaan*/
     justify-content: space-evenly;
     display: flex;
     border-radius: 20px;
@@ -102,37 +103,37 @@ body {
     padding-bottom: 0.5%;
     background-color: #bf430d ;
 }
-.menu img {
+.menu img { /*instellingen voor plaatjes in deze div*/
     height: 30px;
     width: 30px;
 }
-.menuitem {
+.menuitem { /*instellingen voor de tekst in de header*/
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     font-size: 150%;
 }
-.menu a {
+.menu a { /*instellingen van hoe een link weergeven moet worden in de header*/
     color: white;
     text-decoration: none;
 }
-.profile {
+.profile {/*flexbox instellingen voor de profile knop in de navigatie balk*/
     display: flex;
     align-items: center;
     justify-content: space-evenly;
 }
-.Footer {
+.Footer {/*de instellingen voor de gehele footer zonder de footbalk */
     background-color: #7f7f7f;
     padding-top: 2%;
     padding-bottom: 2%;
     display: flex;
     justify-content: space-around;
 }
-.MiddleFooter {
+.MiddleFooter {/*instellingen voor het middelste stukje van de footer(logo. terms of service en email)*/
     display: flex;
     flex-direction: column;
 }
-.TitleFooter {
+.TitleFooter {/*instellingen voor de titel van de footer (mrfresh coin)*/
     color: white;
     background-color: #bf430d;
     border-radius: 25px;
@@ -146,12 +147,12 @@ body {
     margin-top: 7%;
     margin-bottom: 7%;
 }
-#Footbalk {
+#Footbalk {/*het rode balkje boven de footer die groot is en een rode kleur heeft*/
     height: 50px;
     background-color: #bf430d;
     margin-top: 2%;
 }
-.Foottelefoonnummerenadres {
+.Foottelefoonnummerenadres {/*instellingen voor de telefoonnummer en het adres in de footer*/
     color: black;
     background-color: white;
     border-radius: 25px;
@@ -166,7 +167,7 @@ body {
     padding-top: 25px;
     padding-bottom: 25px;
 }
-.FootTosEnEmail {
+.FootTosEnEmail {/*instellingen voor de TOS en email in de footer*/
     color: white;
     border: 2px solid white;
     border-radius: 25px;
@@ -179,41 +180,43 @@ body {
     padding-top: 20px;
     padding-bottom: 20px;
 }
-.bankdetails {
+.bankdetails {/*de div voor de verwijzing naar onze email in de balance pagina (tekst midden op de pagina)*/
     display:flex; 
     justify-content: center; 
     align-items:center;
+    margin-bottom: 20%;
 }
-.BankDetailsText {
+.BankDetailsText {/*de verwijzing naar onze email in de balance pagina (tekst midden op de pagina)*/
+    display:flex; 
     color:white;
     font-size: 200%;
     text-align: center;
     margin-top: 20%;
 }
-#YOU {
+#YOU {/*plaatje van een vinger die wijst naar u (flexbox instellingen er van*/
     display:flex; 
     justify-content: center; 
     align-items:center;
 }
-.TextIStore {
+.TextIStore {/*de schuine tekst in de store pagina die verwijst naar de nfts*/
     color:white;
     font-size: 200%;
     margin-top: 0%;
     margin-bottom: 0%; 
     margin-left: 1%;
 }
-.chartcontainingbox {
+.chartcontainingbox { /*de div waar de chart in zit*/
     display: flex;
     align-items:center
 }
-#chartContainer {
+#chartContainer { /*ook de div waar de chart in zit*/
     height: 450px; 
     width: 75%; 
     display: flex;
     margin-top: 40px;
     margin-left: 250px;
 }
-.catinfobox {
+.catinfobox { /*div met de info over de kat*/
     border-radius: 25px;
     height: 275px;
     width: 475px;
@@ -221,31 +224,32 @@ body {
     padding: 20px;
     color:white;
     font-size:18px;
+    margin-left: 0%;
 }
-.belowchartoptions {
+.belowchartoptions { /*alle dingen onder de chart*/
     display:flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     margin-top: 20px
 }
-.picturevaluebox img {
+.picturevaluebox img { /*instellingen voor plaatje van de NFT*/
     border-radius: 25px;
     height: 275px;
     width: 275px;
     border: 3px solid #bf430d;
 }
-.BuySellButtonInNFTPage {
+.BuySellButtonInNFTPage { /*Box waar de sell en buy buttons inzitten*/
     display: flex;
     flex-direction:column;
     align-items:center;
 }
-.BuySellButtonInNFTPage div {
+.BuySellButtonInNFTPage div { /*instellingen voor divs in dit*/
     padding: 35px
 }
-.picturevaluebox {
+.picturevaluebox { /*instellingen voor div waar plaatje in zit*/
     display:flex;
     justify-content: center;
 }
-.BuyBox {
+.BuyBox { /*instellingen voor knop waar buy op staat*/
     color: black;
     background-color: white;
     border-radius: 25px;
@@ -256,7 +260,7 @@ body {
     padding-top: 20px;
     padding-bottom: 20px;
 }
-.SellBox {
+.SellBox {  /*instellingen voor knop waar sell op staat*/
     color: white;
     border: 2px solid white;
     font-size: 150%;
@@ -266,7 +270,7 @@ body {
     padding-top: 20px;
     padding-bottom: 20px;
 }
-.buysellbuttonbox {
+.buysellbuttonbox { /*instellingen voor de div waar buysellbuttoninnftpage in zit*/
     border-radius: 25px;
     height: 275px;
     width: 475px;
