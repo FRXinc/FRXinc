@@ -1,0 +1,275 @@
+body {
+    background-color: #313338;
+    background-size: cover;
+}
+.Title h1 {
+    background-color:#bf430d ;
+    border-radius: 25px;
+    color: white;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+    margin-bottom: 0%;
+    width: 20%;
+}
+.Frx {
+    color:white;
+    text-align: center;
+    font-size: 600%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.Paragraph {
+    color:white;
+    text-align: center;
+    font-size: 200%;
+}
+.SignupStoreButtonInHomePage {
+    justify-content:center;
+    display: flex;
+}
+.WBBT {
+    color: black;
+    background-color: white;
+    border-radius: 25px;
+    font-size: 150%;
+    border-radius: 25px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    text-decoration: none;
+}
+.BBWT {
+    color: white;
+    border: 2px solid white;
+    font-size: 150%;
+    border-radius: 25px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    text-decoration: none;
+}
+.SignupStoreButtonInHomePage div {
+    padding: 25px;
+}
+.FeaturedHome {
+    justify-content: center;
+    display: flex;
+    color:white;
+    font-size: 250%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+.allthecoins {
+    justify-content: space-evenly;
+    display: flex;
+    margin-top: 0%;
+    border-radius: 25px;
+    border: 3px solid #bf430d;
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+}
+.allthecoins div {
+    padding-top: 5px;
+}
+.allthecoins div img {
+    border-radius: 25px;
+    height: 275px;
+    width: 275px;
+    border: 3px solid #bf430d;
+}
+@font-face {
+    font-family: 'Poppins';
+    src: url(Poppins-Bold.ttf);
+}
+body {
+    font-family: 'Poppins';
+}
+.menu {
+    justify-content: space-evenly;
+    display: flex;
+    border-radius: 20px;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    background-color: #bf430d ;
+}
+.menu img {
+    height: 30px;
+    width: 30px;
+}
+.menuitem {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 150%;
+}
+.menu a {
+    color: white;
+    text-decoration: none;
+}
+.profile {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.Footer {
+    background-color: #7f7f7f;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    display: flex;
+    justify-content: space-around;
+}
+.MiddleFooter {
+    display: flex;
+    flex-direction: column;
+}
+.TitleFooter {
+    color: white;
+    background-color: #bf430d;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    font-size: 200%;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 7%;
+    margin-bottom: 7%;
+}
+#Footbalk {
+    height: 50px;
+    background-color: #bf430d;
+    margin-top: 2%;
+}
+.Foottelefoonnummerenadres {
+    color: black;
+    background-color: white;
+    border-radius: 25px;
+    font-size: 225%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-evenly;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+.FootTosEnEmail {
+    color: white;
+    border: 2px solid white;
+    border-radius: 25px;
+    font-size: 200%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.bankdetails {
+    display:flex; 
+    justify-content: center; 
+    align-items:center;
+}
+.BankDetailsText {
+    color:white;
+    font-size: 200%;
+    text-align: center;
+    margin-top: 20%;
+}
+#YOU {
+    display:flex; 
+    justify-content: center; 
+    align-items:center;
+}
+.TextIStore {
+    color:white;
+    font-size: 200%;
+    margin-top: 0%;
+    margin-bottom: 0%; 
+    margin-left: 1%;
+}
+.chartcontainingbox {
+    display: flex;
+    align-items:center
+}
+#chartContainer {
+    height: 450px; 
+    width: 75%; 
+    display: flex;
+    margin-top: 40px;
+    margin-left: 250px;
+}
+.catinfobox {
+    border-radius: 25px;
+    height: 275px;
+    width: 475px;
+    border: 3px solid #bf430d;
+    padding: 20px;
+    color:white;
+    font-size:18px;
+}
+.belowchartoptions {
+    display:flex;
+    justify-content: space-between;
+    margin-top: 20px
+}
+.picturevaluebox img {
+    border-radius: 25px;
+    height: 275px;
+    width: 275px;
+    border: 3px solid #bf430d;
+}
+.BuySellButtonInNFTPage {
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+}
+.BuySellButtonInNFTPage div {
+    padding: 35px
+}
+.picturevaluebox {
+    display:flex;
+    justify-content: center;
+}
+.BuyBox {
+    color: black;
+    background-color: white;
+    border-radius: 25px;
+    font-size: 150%;
+    border-radius: 25px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.SellBox {
+    color: white;
+    border: 2px solid white;
+    font-size: 150%;
+    border-radius: 25px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.buysellbuttonbox {
+    border-radius: 25px;
+    height: 275px;
+    width: 475px;
+    display:flex;
+    align-items:center;
+}

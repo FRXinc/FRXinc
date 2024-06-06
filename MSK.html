@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="icon" type="image/x-icon" href="MrsKirby.png">
+        <link rel="stylesheet" href="MrStyles.css">
+        <script type="text/javascript">
+            window.onload = function () {
+        
+              var dps = [{x: 1, y: 164470}, {x: 2, y: 135683}, {x: 3, y: 183278}, {x: 4, y: 223620}, {x: 5, y: 884317},{x: 6, y: 754610}, {x: 7, y: 646513}, {x: 8, y: 634618}, {x: 9, y: 279220}, {x: 10, y: 483617}];   //dataPoints. 
+              var chart = new CanvasJS.Chart("chartContainer",{
+                backgroundColor: "#bf430d",
+                  title :{
+                      text: "Mrs Kirby NFT Value",
+                      fontFamily: 'Poppins',
+                      fontColor: 'white'
+                  },
+                  axisX: {						
+                      title: "Time",
+                      titleFontFamily: 'Poppins',
+                      labelFontFamily: 'Poppins',
+                      gridColor: '#bf430d',
+                      titleFontColor: 'white',
+                      labelFontColor: 'white',
+
+                  },
+                  axisY: {						
+                      title: "Value",
+                      titleFontFamily: 'Poppins',
+                      labelFontFamily: 'Poppins',
+                      gridColor: '#bf430d',
+                      titleFontColor: 'white',
+                      labelFontColor: 'white',
+                  },
+                  toolTip: {
+                    fontFamily: 'Poppins'
+                  },
+                  data: [{
+                      type: "area",
+                      dataPoints : dps,
+                      lineColor: "white",
+                      color: "white",
+                      fillOpacity: .0,
+                      background: "blue",
+                      fontFamily: 'Poppins',
+                      titleFontFamily: 'Poppins'
+                  }],
+        });
+              var intrvl = setInterval(numbFunction, 0);
+            function numbFunction() {
+                var Moneyvalue = yVal;
+                document.getElementById("demo").innerHTML = Moneyvalue;
+            }
+              chart.render();
+              var xVal = dps.length + 1;
+              var updateInterval = 1000;
+        
+              var updateChart = function () {
+                  
+                  
+                  yVal = Math.floor((Math.random() * 1000000) + 1);
+                  dps.push({x: xVal,y: yVal});
+                  
+                  xVal++;
+                  if (dps.length >  10 )
+                  {
+                      dps.shift();				
+                  }
+        
+                  chart.render();		
+
+        
+        };
+        setInterval(function(){updateChart()}, updateInterval); 
+        }
+        </script>
+        <script type="text/javascript" src="https://cdn.canvasjs.com/canvasjs.min.js" font="Poppins"></script>
+    </head>
+    <body>
+        <div class="menu">
+            <a alt="Home" href="index.html" class="menuitem">Home</a>
+            <a alt="Store" href="Store.html" class="menuitem">Store</a>
+            <a alt="Balance" href="Balance.html" class="menuitem">Balance</a>
+            <div class="profile"><a alt="Profile" href="Profile.html" class="menuitem" >Profile</a><img src="pfp.png"></div>
+        </div>
+        <div class="chartcontainingbox">
+            <div id="chartContainer">
+            </div>
+        </div>
+        <div class="belowchartoptions">
+            <div class="catinfobox">
+                Mrs. Kirby (黑鼻头, "Black Nose Tip") is a common visitor to the Happy Canteen feeding station, known for her cute face and distinct markings that look like Kirby. She is also known for being the most dominant cat, picking fights with everyone including Mr. Fresh himself, resulting in her having a "Queen" status.
+            </div>
+            <div class="picturevaluebox">
+                <img src="MrsKirby.png">
+            </div>
+            <div class="buysellbuttonbox">
+                <div class="BuySellButtonInNFTPage">
+                    <div class="StoreButtonHome"><a class="BuyBox">Buy</a></div>
+                    <div class="SignUpButtonHome"><a class="SellBox">Sell</a></div>
+                </div>
+            </div>
+        </div>
+        <div id="Footbalk"></div>
+        <div class="Footer">
+            <div class="Foottelefoonnummerenadres">Wellerzand <br>11, 8321 PH <br>Urk</div>
+            <div class="Middlefooter">
+                <div class="FootTosEnEmail">Terms of Service</div>
+                <div class="TitleFooter">MrFreshCoin</div>
+                <div class="FootTosEnEmail">FRX@gmail.com</div>
+            </div>
+            <div class="Foottelefoonnummerenadres">06 <br>123456789</div>
+        </div>
+    </body>
+</html>
